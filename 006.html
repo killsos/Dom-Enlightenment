@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    h1 {
+      color: red
+    }
+  </style>
+</head>
+
+<body>
+  <h1>这里有隐藏元素
+    <span style="display:none" >哈哈 我隐藏这里</span></h1>
+  <script type="text/javascript">
+    console.log(document.querySelector('style').innerText);
+    console.log(document.querySelector('style').textContent);
+
+    console.log(document.querySelector('h1').innerText);
+    console.log(document.querySelector('h1').textContent);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <ul id="parentUl">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li id="item5">5</li>
+    </ul>
+  </body>
+  <script type="text/javascript">
+    var linodes = document.querySelectorAll("li");
+    console.log(linodes);
+    document.querySelector("#parentUl").removeChild(document.querySelector("#item5"));
+    console.log(linodes);
+    
+  </script>
+</html>

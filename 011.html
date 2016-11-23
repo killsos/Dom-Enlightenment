@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{margin: 0px;padding: 0px;}
+      .p{width: 200px;height: 200px;background-color: yellowgreen;padding: 20px;
+        border: solid blue 4px;}
+      .s{
+        width: 100px; height: 100px; background: gray; padding: 10px; border: solid red 2px;position: fixed;
+        left: 0px;
+        top: 0px;
+        margin-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="p">
+      <div class="s">
+
+      </div>
+    </div>
+    <script type="text/javascript">
+      console.log(document.querySelector(".s").getBoundingClientRect());
+      console.log(document.querySelector("body").getClientRects());
+      console.log(document.querySelector('.p').clientWidth);
+    </script>
+  </body>
+</html>

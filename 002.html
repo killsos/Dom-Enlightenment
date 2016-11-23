@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <a href="www.jsonload.com"></a>
+</body>
+<script type="text/javascript">
+  var nodeAnchor = document.querySelector("a");
+  var props = [];
+
+  for (var key in nodeAnchor) {
+    props.push(key);
+  }
+
+  console.log(props.sort());
+  
+</script>
+</html>
