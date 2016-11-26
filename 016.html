@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <p>hi</p>
+  <script type="text/javascript">
+    var testHi = document.querySelector('p').firstChild;
+
+    console.log(testHi.constructor); // Text()
+
+    console.log(testHi);  // {textContent:"hi",length:2,.....}
+
+    console.log(Object.keys("testHi"));
+
+  </script>
+</body>
+</html>

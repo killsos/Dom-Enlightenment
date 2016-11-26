@@ -281,4 +281,15 @@ scrollIntoview(false) 滚动底部
 window.getComputedStyle("#div").color
 * 通过setAttribute() removeAttribute和classList.add() classList.remove()
 
-        document.querySelector('#div').setAttribute() 
+        document.querySelector('#div').setAttribute()...
+
+## 文本节点
+### HTML文档中的文本表现为Text()构造函数的示例即文本节点
+### HTML文档被解析时,在HTML页面中与元素混杂在一起的文本就会被转换为文本节点 016.html
+### DOM中空白符 回车符 文本字符都是文本节点
+### document.createTextNode()
+### Text节点的文本值/数据可以用data或nodeValue获得
+### appendData deleteData insertData replaceData subStringData()
+### 使用textContent移除文本标记并返回所有的子文本节点
+* textContent属性可用来后去所有子文本节点,或设置节点内容成某一特定Text节点,当在某个节点上用它获取该节点文本内容时,它将返回一个由调用该方法的的节点内所有文本节点合并而成的字符串
+### 使用normalize()合并兄弟文本节点成单个文本节点
