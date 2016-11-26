@@ -299,4 +299,5 @@ window.getComputedStyle("#div").color
 * innerTex知道css 如果隐藏文本 innerTex会无视它 而textContent不会
 * innerTex关心css 会触发一次重排 而textContent不会
 * innerTex无视script  style所含的文本点
-* innerTex不会textContent
+* innerTex不像textContent会返回的文本规范化,textContent会完全按照文本所含返回,仅移除标记。该字符串包括字符串 换行符及回车
+* innerText是非标准的是特定浏览器 textContent是根据DOM规范实现的
