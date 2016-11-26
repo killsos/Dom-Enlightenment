@@ -277,3 +277,4 @@ scrollIntoview(false) 滚动底部
 * setProperty getProperty removeProperty 这三个方法的属性名称是横线的名称
 * style对象cssText属性 也可以设置 获取 移除 style的内容
 * 使用新字符串替换style属性是批量改动某个元素样式是最快方式
+* getComputedStyle 获取元素的已计算样式---即包含任何样式的实际样式
