@@ -281,4 +281,4 @@ scrollIntoview(false) 滚动底部
 window.getComputedStyle("#div").color
 * 通过setAttribute() removeAttribute和classList.add() classList.remove()
 
-    document.querySelector('#div').setAttribute() removeAttribute和classList.add() classList.remove()
+        document.querySelector('#div').setAttribute() 
