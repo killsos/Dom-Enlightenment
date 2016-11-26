@@ -274,6 +274,6 @@ scrollIntoview(false) 滚动底部
 * style属性返回一个cssstyleDeclaration对象  并且仅仅包含内联样式
 * style对象中属性使用驼峰命名规则
 * background-color   ====   backgroundColor
-* setProperty getProperty removeProperty
+* setProperty getProperty removeProperty 这三个方法的属性名称是横线的名称
 * style对象cssText属性 也可以设置 获取 移除 style的内容
-*
+* 使用新字符串替换style属性是批量改动某个元素样式是最快方式
