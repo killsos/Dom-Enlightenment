@@ -1,5 +1,5 @@
 # Dom Enlighten reading note
-秦磊 2016年04月17日
+2016年04月17日
 
 ## 1 节点概述
 
@@ -272,38 +272,8 @@ scrollIntoview(false) 滚动底部
 ## 元素节点内联样式
 ### 样式属性 style
 * style属性返回一个cssstyleDeclaration对象  并且仅仅包含内联样式
-* style对象中属性使用驼峰命名规则 
+* style对象中属性使用驼峰命名规则
 * background-color   ====   backgroundColor
 * setProperty getProperty removeProperty
 * style对象cssText属性 也可以设置 获取 移除 style的内容
-* 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*
