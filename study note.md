@@ -301,3 +301,7 @@ window.getComputedStyle("#div").color
 * innerTex无视script  style所含的文本点
 * innerTex不像textContent会返回的文本规范化,textContent会完全按照文本所含返回,仅移除标记。该字符串包括字符串 换行符及回车
 * innerText是非标准的是特定浏览器 textContent是根据DOM规范实现的
+
+## DocumentFragment节点
+* 创建与使用DocumentFragment节点,可在实时DOM树之外提供一个轻量的文档树
+* 可以把DocumentFragment看做一个空的文档模板,行为与实时的DOM相仿,但仅在内存中存在,并且的子节点可以简单地内存中操作,而后附加到实时DOM
