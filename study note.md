@@ -387,4 +387,4 @@ window.getComputedStyle("#div").color
 
 | 事件类型        | 事件接口           | 事件目标  |  冒泡  | 可取消 |
 | ------------- |:-------------:| :-----:|----- | ----- | ----- |
-| col 3 is      | right-aligned | $1600 |
+| load     | Event UIEvent | 一些资源加载完成时候出发 | element XMLHttpRequest | 否 | 否 |
