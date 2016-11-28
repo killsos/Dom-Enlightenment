@@ -386,5 +386,5 @@ window.getComputedStyle("#div").color
 #### element document  window 预定义事件
 
 | 事件类型        | 事件接口           | 事件目标  |  冒泡  | 可取消 |
-| ------------- |:-------------:| :-----:|----- | ----- | ----- |
+| ------------- |:-------------:| :-----:|:-----: | :-----: | :-----: |
 | load     | Event UIEvent | 一些资源加载完成时候出发 | element XMLHttpRequest | 否 | 否 |
