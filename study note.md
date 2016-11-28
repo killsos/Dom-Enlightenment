@@ -1,5 +1,4 @@
 # Dom Enlighten reading note
-2016年04月17日
 
 ## 1 节点概述
 
@@ -376,3 +375,16 @@ window.getComputedStyle("#div").color
 #### document.scripts
 
 ## DOM事件
+* 内联属性事件处理程序  属性事件处理程序  addEventListener 来布置事件回调
+* event callback handler listener一个意思
+* 属性事件处理程序前面会被后面覆盖
+* Element节点三个都支持
+* Document节点支持属性事件处理程序
+* window对象通过body或frame支持内联事件处理程序
+* 属性事件处理程序属于DOM0级事件 addEventlistener属于DOM2级事件
+
+#### element document  window 预定义事件
+
+| 事件类型        | 事件接口           | 事件目标  |  冒泡  | 可取消 |
+| ------------- |:-------------:| :-----:|----- | ----- | ----- |
+| col 3 is      | right-aligned | $1600 |
