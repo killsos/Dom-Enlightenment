@@ -370,3 +370,9 @@ window.getComputedStyle("#div").color
 #### 使用async有个前提是document.wirte()不会在被推迟的Javascript中使用
 #### IE10支持async
 #### async属性压过defer
+
+#### 使用动态script元素强制异步加载并解析外部javascript,缺陷不安装插入的顺序执行
+#### 使用动态script元素onload事件
+#### document.scripts
+
+## DOM事件
