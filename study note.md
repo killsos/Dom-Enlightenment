@@ -339,4 +339,4 @@ window.getComputedStyle("#div").color
 #### styleSheets是实时的,length属性
 #### styleSheets还可以访问HTML文档中的当个样式表即先选取DOM中的元素<style/link>再使用,.sheet属性取得CSSStyleSheet对象的访问
 
-        document.querySelector("style/link").sheet
+            document.querySelector("style/link").sheet
