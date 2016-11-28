@@ -305,3 +305,38 @@ window.getComputedStyle("#div").color
 ## DocumentFragment节点
 * 创建与使用DocumentFragment节点,可在实时DOM树之外提供一个轻量的文档树
 * 可以把DocumentFragment看做一个空的文档模板,行为与实时的DOM相仿,但仅在内存中存在,并且的子节点可以简单地内存中操作,而后附加到实时DOM
+
+#### 使用createDocumentFragment()创建
+
+#### 使用createDocumentFragment与createElement()的区别
+* 文档片段可以包含任意类型的节点(除了html body这个节点),而元素不行
+* 添加文档片段到DOM时,它自身不会添加到.这与附加元素节点相反,元素节点会跟着附加操作一并添加到DOM中
+* 当文档片段被附加到DOM中时,它从文档片段传输内容至它被附加的位置,而自身不在存在于创建它时所在的位置,对用来临时包含节点,而后移动到实时DOM树的元素节点来说就不是这情况了
+
+#### 添加DocumentFragment添加到时DOM通过appendChild/insertBefore,文档片段的子节点将被传输成为调用这些方法的DOM节点的子节点
+
+#### 使用文档片段上的innerHTML
+
+#### DOMparser可以解析存在字符串中的HTML成为一个DOM文档
+* new DOMParser(),DOMParser.parseFromString()
+* IE使用Document.loadXML()
+
+#### 通过复制将片段所含节点保留在内存中
+* cloneNode(true)
+
+
+## css样式与css规则
+#### 通过使用HTMLlinkElement引入外部样式
+#### 通过使用HTMLStyleElement定义内联样式
+#### HTML文档中一旦有样式表添加就会生成CSSStyleSheet对象,样式表里每条CSS规则都表示为一个CSSStyleSheet对象
+017.html
+
+#### 选取引入样式表的元素(<link> <style>)与访问表示样式表自身的实际对象(CSSStyleSheet)是不同的
+018.html
+
+#### 访问DOM中所有样式表(CSSStyleSheet)
+#### document.styleSheets提供一个包含HTML文档中所有样本对象列表的访问方式包含显式链接(link且rel设为stylesheet)和内联样式(style)
+#### styleSheets是实时的,length属性
+#### styleSheets还可以访问HTML文档中的当个样式表即先选取DOM中的元素<style/link>再使用,.sheet属性取得CSSStyleSheet对象的访问
+
+        document.querySelector("style/link").sheet
