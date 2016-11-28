@@ -331,6 +331,11 @@ window.getComputedStyle("#div").color
 #### HTML文档中一旦有样式表添加就会生成CSSStyleSheet对象,样式表里每条CSS规则都表示为一个CSSStyleSheet对象
 * 017.html
 
-#### 选取引入样式表的元素(<link> <style>)与访问表示样式表自身的实际对象(CSSStyleSheet)是不同的
-
+#### 选取引入样式表的元素(linkstyle)与访问表示样式表自身的实际对象(CSSStyleSheet)是不同的
 * 018.html
+#### 访问DOM中所有样式表(CSSStyleSheet)
+#### document.styleSheets提供一个包含HTML文档中所有样本对象列表的访问方式包含显式链接(link且rel设为stylesheet)和内联样式(style)
+#### styleSheets是实时的,length属性
+#### styleSheets还可以访问HTML文档中的当个样式表即先选取DOM中的元素style/link再使用,.sheet属性取得CSSStyleSheet对象的访问
+
+            document.querySelector("style/link").sheet
