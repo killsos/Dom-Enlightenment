@@ -339,3 +339,22 @@ window.getComputedStyle("#div").color
 #### styleSheets还可以访问HTML文档中的当个样式表即先选取DOM中的元素style/link再使用,.sheet属性取得CSSStyleSheet对象的访问
 
             document.querySelector("style/link").sheet
+
+#### 访问CSSStyleSheet列表或通过.sheet属性的CSSStyleSheet对象拥有如下属性与方法
+
+#### CSSStyleRule对象代表了样式表中所含的每条css规则
+        CSSStyleSheet.cssRules[0].cssText;
+
+#### cssRules属性与方法 cssText parentRule parentStyleSheet selectorText style type
+#### 使用insertRule()/deleteRule() 插入/删除样式 索引从0开始
+
+#### 使用.style属性修改CSSStyleSheet的值
+
+#### 创建新的内联CSS样式 document.createElement('style'); styleElm.innerHTML = "";
+#### 创建外部样式表 document.createElement('link') linkEle.setAttribute()
+#### disabled属性
+
+## DOMZ中的Javascript
+#### script:src 引入外部脚本,可以跨域
+#### 页面内联Javascript产生一个文本节点从而通过innerHTML/textContent取得script内容但是在
+#### 浏览器解析完DOM之后附加新的由Javascript代码组成的文本节点到DOM,并不会执行新的Javascript代码,只是替换掉文本
