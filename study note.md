@@ -388,3 +388,63 @@ window.getComputedStyle("#div").color
 | 事件类型        | 事件接口           | 事件目标  |  冒泡  | 可取消 |
 | ------------- |:-------------:| :-----:|:-----: | :-----: | :-----: |
 | load     | Event UIEvent | 一些资源加载完成时候出发 | element XMLHttpRequest | 否 | 否 |
+| unload     |  UIEvent | 一些资源加载移除时候出发 | window body frameset | 否 | 否 |
+
+##### 用户界面事件
+*  load unload abort error  resize scroll contextmenu
+
+##### 聚焦事件
+* blur focus focusin focusout
+
+##### 表单事件
+* change reset submit select
+
+##### 点击事件
+* click dbclick mousedown mouseenter mouseleave mousemove mouseout mouseup mouseover
+
+##### 滚轮事件
+* wheel
+
+##### 键盘事件
+* keydown keypress keyup
+
+##### 触摸事件
+* touchstart touchend touchmove touchenter touchleave touchcancel
+
+##### window body 嵌套页 事件
+* afterprint beforeprint beforeunload haschange message offline online pagehide pageshow
+
+##### 文档事件
+* readystatechange DOMContentloaded
+
+##### 拖拽事件
+* drag dragstart dragend dragenter dragleave dragover drop
+
+## 事件流程
+* 当某个事件发生,该事件在DOM中流动或传播,在其他节点和Javascript对象上也触发相同事件,此事件流程可以被编写为捕捉阶段 冒泡阶段发生,或者两者都有
+* 传给事件监听函数的事件对象有个eventPhase有三个值 1 扑捉  2 目标 3 冒泡
+
+* addEventlistener removeEventlistener 只能使用函数引用才能移除 匿名函数不可以
+
+* 从事件对象中获取事件属性 包含各种方法 stopPropagation() stopImmediatePropagation() preventDefault()
+
+* addEventlistener中this指向事件绑定的节点或对象
+
+* event.currentTarget属性在监听函数中获取不同this所供值得引用
+
+* event.target原始发生时所在节点或对象引用
+
+* preventDefault return false 取消默认事件
+
+* stopPropagation将终止捕获/冒泡事件流程 但是绑定到该节点的函数依然会调用
+
+* stopImmediatePropagation终止事件流程与相同目标上的同一事件的其他函数
+
+## 自定义事件
+* docuemnt.createEvent() initCustomEvent() dispatchEvent()
+
+* 可以模拟事件发生
+
+* 事件委托
+
+## domjs
