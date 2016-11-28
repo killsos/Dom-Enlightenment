@@ -354,7 +354,19 @@ window.getComputedStyle("#div").color
 #### 创建外部样式表 document.createElement('link') linkEle.setAttribute()
 #### disabled属性
 
-## DOMZ中的Javascript
+## DOM中的Javascript
 #### script:src 引入外部脚本,可以跨域
 #### 页面内联Javascript产生一个文本节点从而通过innerHTML/textContent取得script内容但是在
 #### 浏览器解析完DOM之后附加新的由Javascript代码组成的文本节点到DOM,并不会执行新的Javascript代码,只是替换掉文本
+#### Javascript默认同步解析 先下载后解析 产生阻塞
+#### 使用defer推迟外部脚本的下载与执行,将推迟外部Javascript文件的阻塞 下载与执行,直到浏览器完成解析并关闭</html>节点
+#### 使用defer的Javascript不会安装顺序执行
+#### 使用defer有个前提是document.wirte()不会在被推迟的Javascript中使用
+
+#### 使用async异步下载并执行外部Javascript文件
+#### 使用async告诉浏览器不要阻塞HTML页面的构建(DOM解析 包括下载图片 样式等资源文件)并且放弃顺序加载
+#### 使用async文件被加载,并且按他们下载完毕的顺序执行
+#### 使用async一个缺点是javascript文件可能完全不按他们在DOM中引入顺序解析,这引起依赖管理的问题
+#### 使用async有个前提是document.wirte()不会在被推迟的Javascript中使用
+#### IE10支持async
+#### async属性压过defer
