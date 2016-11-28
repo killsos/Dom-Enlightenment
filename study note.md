@@ -330,3 +330,7 @@ window.getComputedStyle("#div").color
 #### 通过使用HTMLStyleElement定义内联样式
 #### HTML文档中一旦有样式表添加就会生成CSSStyleSheet对象,样式表里每条CSS规则都表示为一个CSSStyleSheet对象
 * 017.html
+
+#### 选取引入样式表的元素(<link> <style>)与访问表示样式表自身的实际对象(CSSStyleSheet)是不同的
+
+* 018.html
